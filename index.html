@@ -117,6 +117,51 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
+          <tr class="grid-2" onmouseout="ssl_stop()" onmouseover="ssl_start()">
+              <td class="grid-l">
+                <div class="one">
+                  <div class="two" id='ssl_1'>
+                    <img id="ssl" src='images/ssl_disent_2d.svg' width="100%">
+                  </div>
+                  <div class="two" id='ssl_2'>
+                    <img src='images/ssl_disent_1d.svg' width="100%">
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  function ssl_start() {
+                    document.getElementById('ssl_1').style.opacity = "1";
+                    document.getElementById('ssl_2').style.opacity = "0";
+                  }
+  
+                  function ssl_stop() {
+                    document.getElementById('ssl_1').style.opacity = "0";
+                    document.getElementById('ssl_2').style.opacity = "1";
+                  }
+                  ssl_stop()
+                </script>
+              </td>
+              <td id="ssl_pp" class="grid-r">
+                <a href="https://arxiv.org/abs/2311.08815">
+                  <papertitle>Self-Supervised Disentanglement by Leveraging Structure in Data Augmentations</papertitle>
+                </a>
+                <p class="names">
+                <strong>C Eastwood</strong>,
+                <a href="https://sites.google.com/view/julius-von-kuegelgen/home">J von Kügelgen</a>,
+                <a href="https://linusericsson.github.io/">L Ericsson</a>,
+                <a href="https://dianebouchacourt.github.io/">D Bouchacourt</a>,
+                <a href="https://mila.quebec/en/person/pascal-vincent/">P Vincent</a>,
+                <a href="https://www.is.mpg.de/~bs">B Sch&ouml;lkopf</a>,
+                <a href="https://markibrahim.me/">M Ibrahim</a>
+                </p>
+          <em class="journal">Preprint, 2023</em>
+            <p class="journal">
+            </p>
+                <p class="abstract"> We propose a new self-supervised learning framework which uses data augmentations to 
+                  disentangle "style" attributes of the data, rather than discard them.</p>
+                <p class="abstract">(Previously @ NeurIPS 2023 workshops on <a href="https://openreview.net/forum?id=KVqyyPvK9H">Self-Supervised Learning</a> 
+                  and <a href="https://openreview.net/forum?id=JoISqbH8vl">Causal Representation Learning</a>)</p>
+              </td>
+          </tr>
           <tr class="grid-2" onmouseout="sfb_stop()" onmouseover="sfb_start()">
               <td class="grid-l">
                 <div class="one">

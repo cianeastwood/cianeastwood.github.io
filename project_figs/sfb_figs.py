@@ -16,6 +16,45 @@ plt.rc('text', usetex=True)
 plt.rc('text.latex', preamble=r'\usepackage{times,amsmath, amsfonts}')
 mpl.rcParams['axes.linewidth'] = 1.2  # set the value globally
 
+
+def cs_plot():
+    # Settings
+    fontsizes = {'font.size': 18,
+                 'axes.labelsize': 18,
+                 'legend.fontsize': 18,
+                 'xtick.labelsize': 14,
+                 'ytick.labelsize': 14}
+    plt.rcParams.update(fontsizes)
+
+    # Data
+    c_f = [0.98, 0.99, 0.985, 0.99]
+    c_a = [1., 1., 1., 1.]
+    s_f = [0., 0.581, 0.623, 0.671]
+    s_a = [0., 0., 0., 0.]
+
+    x = [5, 10, 15, 20]
+    Y = [c_f, s_f, c_a, s_a]
+    names = ["fixed $\lambda$: content", "fixed $\lambda$: style",
+             "adaptive $\lambda$: content", "adaptive $\lambda$: content"]
+    labels = ["tab:purple", "tab:purple", "tab:orange", "tab:orange"]
+    linestyles = ["solid", "solid", "dashed", "dashed"]
+
+    # Plot
+    fig, ax = plt.subplots(figsize=(3.65, 3.5))
+
+    for y, label, color, linestyle in zip(Y, names, labels, linestyles):
+        sns.lineplot(x=x, y=y, ax=ax, linestyle=linestyle, 
+                     color=color, label=label, linewidth=4)
+    
+    ax.legend(loc="best")
+    # ax.legend(loc="best", ncol=3, handlelength=0.8, columnspacing=0.6,
+    #           handletextpad=0.2)
+    ax.set_xlabel(r"$\text{dim}(\bm{z})$")
+    ax.set_ylabel("$r^2$")
+
+    plt.savefig("ssl_cs.pdf")
+
+
 def lc_curve_paper():
     # Settings
     fontsizes = {'font.size': 18,
@@ -161,5 +200,4 @@ def lc_curve_website(shade=True, fname="optimal_curves.pdf"):
 
 if __name__ == "__main__":
     np.random.seed(SEED)
-    lc_curve_website(shade=False, fname="../images/sfb_1.svg")
-    lc_curve_website(shade=True, fname="../images/sfb_2.svg")
+    cs_plot()
