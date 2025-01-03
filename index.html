@@ -66,7 +66,6 @@
           <tr>
           <td style="padding:20px; padding-top:0px; padding-bottom:10px; width:100%; vertical-align:middle">
             <ul>
-              <li>12/2024: New preprint <a href="https://arxiv.org/abs/2412.16247">Towards scientific discovery with dictionary learning: Extracting biological concepts from microscopy foundation models</a>!</li>
               <li>07/2024: <a href="https://arxiv.org/abs/2312.02116">GIVT: Generative Infinite-Vocabulary Transformers</a> accepted to ECCV.</li>
               <li>07/2024: Joined <a href="https://www.valencelabs.com/">Valence Labs</a> as a Senior Research Scientist.</li>
               <li>05/2024: Completed my PhD, with my thesis titled <a href="https://era.ed.ac.uk/handle/1842/41628">"Shift happens: How can we best prepare machine learning systems?"</a></li>
@@ -316,6 +315,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
+            <tr class="grid-2" onmouseout="sae_stop()" onmouseover="sae_start()">
+              <td class="grid-l">
+                <div class="one">
+                  <div class="two" id='sae_1'>
+                    <img id="sae" src='images/sae_2.svg' width="70%">
+                  </div>
+                  <div class="two" id='sae_2'>
+                    <img src='images/sae_1.svg' width="70%">
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  function sae_start() {
+                    document.getElementById('sae_1').style.opacity = "1";
+                    document.getElementById('sae_2').style.opacity = "0";
+                  }
+  
+                  function sae_stop() {
+                    document.getElementById('sae_1').style.opacity = "0";
+                    document.getElementById('sae_2').style.opacity = "1";
+                  }
+                  sae_stop()
+                </script>
+              </td>
+              <td id="sae_pp" class="grid-r">
+                <a href="https://arxiv.org/abs/2412.16247">
+                  <papertitle>Towards scientific discovery with dictionary learning: Extracting biological concepts from microscopy foundation models</papertitle>
+                </a>
+                <p class="names">
+                <a href="https://sml.inf.ethz.ch/group/konstantind/">K Donhauser</a>,
+                <a href="https://github.com/KristinaUlicna">K Ulicna</a>,
+                <a href="https://www.gemma-moran.com/">GE Moran</a>,
+                <a href="https://mlatcl.github.io/people/aditya-ravuri.html">A Ravuri</a>,
+                <a href="https://kiankd.github.io/">K Kenyon-Dean</a>,
+                <strong>C Eastwood</strong>,
+                <a href="https://jhartford.github.io/">J Hartford</a>
+                </p>
+          <em class="journal">Preprint 2024</em>
+            <p class="journal">
+              
+            </p>
+                <p class="abstract"> We extract biological concepts from <a href="https://arxiv.org/abs/2411.02572">microscopy foundation models</a> using dictionary learning.</p>
+                <p class="abstract">(Previously <b>Oral</b> @ NeurIPS 2024 workshop on <a href="https://interpretable-ai-workshop.github.io/">Interpretable AI</a>)</p>
+              </td>
+          </tr>
           <tr class="grid-2" onmouseout="ssl_stop()" onmouseover="ssl_start()">
               <td class="grid-l">
                 <div class="one">
