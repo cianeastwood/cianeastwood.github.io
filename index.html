@@ -5,6 +5,9 @@
   <meta name="author" content="Cian Eastwood">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="academicons/css/academicons.min.css">
@@ -18,28 +21,25 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr style="padding:0px">
-            <td class="mobile-td" style="padding:2.5%;width:63%;vertical-align:middle">
+            <td id="overview_text" class="mobile-td" style="padding:2.5%;width:63%;vertical-align:middle">
               <p class="mobile-p" style="text-align:center">
                 <name>Cian Eastwood</name>
               </p>
               <div class="div-only-mobile" style="padding:2.5%;width:40%;max-width:40%;margin:auto">
-                <a target="_blank" href="images/ce_profile.png"><img src="images/ce_profile.png" alt="Profile photo" img="" style="width:100%;max-width:100%"></a>
+                <img src="images/ce_profile.png" alt="Profile photo" style="width:71.28%;max-width:71.28%;display:block;margin-left:auto;margin-right:auto">
               </div>
               <p>
-                I'm a Senior Research Scientist at <a href="https://www.relationrx.com">Relation</a>, building tools that enable scientific discovery from high-dimensional data.
+                I'm a Senior Research Scientist at <a href="https://www.relationrx.com">Relation</a>, working on generative models of biological data.
               </p>
               <p>
-                My current research focuses on generative models (flow matching, diffusion, multimodal) and generalisation (in-context learning, robustness).
+                My current research focuses on diffusion / flow models and ways to achieve generalisation, target-property guidance, and multimodality.
               </p>
               <p>
-                Previously, I was a Senior Research Scientist at <a href="https://www.valencelabs.com">Valence Labs</a> working on generative models of cell microscopy images. I completed my PhD at the University of Edinburgh (with <a href="https://homepages.inf.ed.ac.uk/ckiw/">Chris Williams</a>) 
-                and the Max Planck Institute for Intelligent Systems (with <a href="https://www.is.mpg.de/person/bs">Bernhard Schölkopf</a>). During my PhD, I spent time at Google DeepMind, Meta AI (FAIR) and Spotify.
+                Previously, I was at <a href="https://www.valencelabs.com">Valence Labs</a> / <a href="https://www.recursion.com">Recursion</a>, working on generative models of cell microscopy images. I completed my PhD at the University of Edinburgh (with <a href="https://homepages.inf.ed.ac.uk/ckiw/">Chris Williams</a>) 
+                and the Max Planck Institute for Intelligent Systems (with <a href="https://www.is.mpg.de/person/bs">Bernhard Schölkopf</a>), working on generalisation and representation learning. During my PhD, I spent time at Google DeepMind, Meta AI (FAIR) and Spotify.
               </p>
-              <script type="text/javascript">
-                .icon
-              </script>
               <p style="text-align:center">
-                <div class="icons" style="text-align:center" t>
+                <div class="icons" style="text-align:center">
                 <a href="mailto:[firstname].[lastname]@gmail.com"><i class="fa fa-envelope fa-fw"></i></a> &nbsp&nbsp &nbsp&nbsp
                 <!-- <a href="data/Cian-Eastwood-CV.pdf"><i class="ai ai-cv ai-lg"></i></a> &nbsp&nbsp/&nbsp&nbsp -->
                 <a href="https://scholar.google.com/citations?hl=en&user=p7VFLEIAAAAJ"><i class="ai ai-google-scholar ai-lg"></i></a> &nbsp&nbsp &nbsp&nbsp
@@ -51,13 +51,13 @@
               </p>
             </td>
             <td class="desk" style="padding:2.5%;width:40%;max-width:40%;text-align: center;">
-              <a href="images/ce_profile.png" target="_blank"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ce_profile.png" class="hoverZoomLink"></a>
+              <img style="width:71.28%;max-width:71.28%;display:block;margin-left:auto;margin-right:auto" alt="Profile photo" src="images/ce_profile.png">
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-          <td style="padding:20px; padding-top:60px; padding-bottom:10px; width:100%; vertical-align:middle">
+          <td style="padding:20px; padding-top:52px; padding-bottom:10px; width:100%; vertical-align:middle">
             <heading>Selected Publications</heading>
           </td>
         </tr>
@@ -92,14 +92,11 @@
                 <papertitle>GIVT: Generative Infinite-Vocabulary Transformers</papertitle>
               </a>
               <p class="names">
-              <a href="https://mitscha.github.io/">M Tschannen</a>,
+              M Tschannen,
               <strong>C Eastwood</strong>,
-              <a href="https://fmentzer.github.io/">F Mentzer</a>
+              F Mentzer
               </p>
-        <em class="journal">ECCV 2024</em>
-              <p class="journal">
-                  <a href="https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/givt/README.md">Code</a>
-              </p>
+              <p class="journal"><em class="journal">ECCV 2024</em> | <a href="https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/givt/README.md">Code</a></p>
               <p class="abstract">We introduce generative transformers for real-valued vector sequences, rather than discrete tokens from a finite vocabulary.
             </td>
           </tr>
@@ -132,16 +129,13 @@
               </a>
               <p class="names">
               <strong>C Eastwood</strong>*,
-              <a href="https://sss1.github.io/">S Singh</a>*,
-              <a href="https://andreinicolicioiu.github.io/">A Nicolicioiu</a>,
-              <a href="https://jimimvp.github.io/">M Vlastelica</a>,
-              <a href="https://sites.google.com/view/julius-von-kuegelgen/home">J von Kügelgen</a>,
-              <a href="https://www.is.mpg.de/~bs">B Sch&ouml;lkopf</a>
+              S Singh*,
+              A Nicolicioiu,
+              M Vlastelica,
+              J von Kügelgen,
+              B Sch&ouml;lkopf
               </p>
-        <em class="journal">NeurIPS 2023</em>
-          <p class="journal">
-          <a href="https://github.com/cianeastwood/sfb">Code</a>
-          </p>
+              <p class="journal"><em class="journal">NeurIPS 2023</em> | <a href="https://github.com/cianeastwood/sfb">Code</a></p>
               <p class="abstract"> We show how a weak-but-stable training signal can be used to harness complementary spurious features, boosting performance.</p>
               <p class="abstract">(<a href="https://openreview.net/forum?id=cvj2FdS8mm">Previously</a> @ ICML 2023 
                 <a href="https://sites.google.com/view/scis-workshop-23">Spurious Correlations Workshop</a>)</p>
@@ -176,19 +170,14 @@
             </a>
             <p class="names">
             <strong>C Eastwood</strong>*,
-            <a href="https://arobey1.github.io/">A Robey</a>*,
-            <a href="https://sss1.github.io/">S Singh</a>,
-            <a href="https://sites.google.com/view/julius-von-kuegelgen/home">J von Kügelgen</a>,
-            <a href="https://www.seas.upenn.edu/~hassani/">H Hassani</a>,
-            <a href="https://www.georgejpappas.org/">G J Pappas</a>,
-            <a href="https://www.is.mpg.de/~bs">B Sch&ouml;lkopf</a>
+            A Robey*,
+            S Singh,
+            J von Kügelgen,
+            H Hassani,
+            G J Pappas,
+            B Sch&ouml;lkopf
             </p>
-      <em class="journal">NeurIPS 2022</em>
-            <p class="journal">
-            <a href="https://github.com/cianeastwood/qrm">Code</a>
-            /
-            <a href="https://slideslive.com/38991025/probable-domain-generalization-via-quantile-risk-minimization?ref=speaker-50036">Video</a>
-            </p>
+            <p class="journal"><em class="journal">NeurIPS 2022</em> | <a href="https://github.com/cianeastwood/qrm">Code</a> | <a href="https://slideslive.com/38991025/probable-domain-generalization-via-quantile-risk-minimization?ref=speaker-50036">Video</a></p>
             <p class="abstract">We learn predictors that generalize with a desired probability and argue for better evaluation protocols in domain generalization.
           </td>
         </tr>
@@ -196,10 +185,10 @@
           <td class="grid-l">
             <div class="one">
               <div class="two" id='bufr_1'>
-                <img id="bufr" src='images/tsne_1.png' width="220px" style="padding: 30px 0px 0px 0px;"> <!-- ds_2.svg -->
+                <img id="bufr" src='images/tsne_1.png' width="170px" style="padding: 23px 0px 0px 0px;"> <!-- ds_2.svg -->
               </div>
               <div class="two" id='bufr_2'>
-                <img src='images/tsne_2.png' width="220px" style="padding: 30px 0px 0px 0px;"> <!-- ds_1.svg -->
+                <img src='images/tsne_2.png' width="170px" style="padding: 23px 0px 0px 0px;"> <!-- ds_1.svg -->
               </div>
             </div>
             <script type="text/javascript">
@@ -221,14 +210,11 @@
             </a>
             <p class="names">
             <strong>C Eastwood</strong>*,
-            <a href="https://ianxmason.github.io/">I Mason</a>*,
-            <a href="https://homepages.inf.ed.ac.uk/ckiw/">CKI Williams</a>,
-            <a href="https://www.is.mpg.de/~bs">B Sch&ouml;lkopf</a>
+            I Mason*,
+            CKI Williams,
+            B Sch&ouml;lkopf
             </p>
-      <em class="journal">ICLR 2022 </em><b class="journal">(Spotlight)</b>
-            <p class="journal">
-            <a href="https://github.com/cianeastwood/BUFR">Code</a>
-            </p>
+            <p class="journal"><em class="journal">ICLR 2022 </em><b class="journal">(Spotlight)</b> | <a href="https://github.com/cianeastwood/BUFR">Code</a></p>
             <p class="abstract">We address "measurement shift" (e.g., a new hospital scanner) by restoring the <em>same</em> features rather than learning new ones. </p>
             <!--<p>*equal contribution</p>-->
           </td>
@@ -262,12 +248,9 @@
             </a>
             <p class="names">
             <strong>C Eastwood</strong>,
-            <a href="https://homepages.inf.ed.ac.uk/ckiw/">CKI Williams</a>
+            CKI Williams
             </p>
-      <em class="journal">ICLR 2018</em>
-            <p class="journal">
-            <a href="https://github.com/cianeastwood/qedr">Code</a>
-            </p>
+            <p class="journal"><em class="journal">ICLR 2018</em> | <a href="https://github.com/cianeastwood/qedr">Code</a></p>
             <p class="abstract">We propose the DCI framework for evaluating "disentangled"
               representations.</p>
             <p class="abstract">(Previously <b>Spotlight</b> @ NeurIPS 2017 <a href="https://sites.google.com/view/disentanglenips2017">Disentanglement workshop</a>)</p>
@@ -277,7 +260,7 @@
       </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:20px; padding-top:60px; padding-bottom:10px; width:100%; vertical-align:middle">
+            <td style="padding:20px; padding-top:52px; padding-bottom:10px; width:100%; vertical-align:middle">
               <heading>Other Publications</heading>
             </td>
           </tr>
@@ -288,10 +271,10 @@
               <td class="grid-l">
                 <div class="one">
                   <div class="two" id='sae_1'>
-                    <img id="sae" src='images/sae_2.svg' width="70%">
+                    <img id="sae" src='images/sae_2.svg' width="54%">
                   </div>
                   <div class="two" id='sae_2'>
-                    <img src='images/sae_1.svg' width="70%">
+                    <img src='images/sae_1.svg' width="54%">
                   </div>
                 </div>
                 <script type="text/javascript">
@@ -312,19 +295,16 @@
                   <papertitle>Towards scientific discovery with dictionary learning: Extracting biological concepts from microscopy foundation models</papertitle>
                 </a>
                 <p class="names">
-                <a href="https://sml.inf.ethz.ch/group/konstantind/">K Donhauser</a>,
-                <a href="https://github.com/KristinaUlicna">K Ulicna</a>,
-                <a href="https://www.gemma-moran.com/">GE Moran</a>,
-                <a href="https://mlatcl.github.io/people/aditya-ravuri.html">A Ravuri</a>,
-                <a href="https://kiankd.github.io/">K Kenyon-Dean</a>,
+                K Donhauser,
+                K Ulicna,
+                GE Moran,
+                A Ravuri,
+                K Kenyon-Dean,
                 <strong>C Eastwood</strong>,
-                <a href="https://jhartford.github.io/">J Hartford</a>
+                J Hartford
                 </p>
-          <em class="journal">Preprint 2024</em>
-            <p class="journal">
-              
-            </p>
-                <p class="abstract"> We extract biological concepts from <a href="https://arxiv.org/abs/2411.02572">microscopy foundation models</a> using dictionary learning.</p>
+                <p class="journal"><em class="journal">Preprint 2024</em></p>
+                <p class="abstract"> We extract interpretable biological concepts from <a href="https://arxiv.org/abs/2411.02572">microscopy foundation models</a>.</p>
                 <p class="abstract">(Previously <b>Oral</b> @ NeurIPS 2024 workshop on <a href="https://interpretable-ai-workshop.github.io/">Interpretable AI</a>)</p>
               </td>
           </tr>
@@ -357,20 +337,17 @@
                 </a>
                 <p class="names">
                 <strong>C Eastwood</strong>,
-                <a href="https://sites.google.com/view/julius-von-kuegelgen/home">J von Kügelgen</a>,
-                <a href="https://linusericsson.github.io/">L Ericsson</a>,
-                <a href="https://dianebouchacourt.github.io/">D Bouchacourt</a>,
-                <a href="https://mila.quebec/en/person/pascal-vincent/">P Vincent</a>,
-                <a href="https://www.is.mpg.de/~bs">B Sch&ouml;lkopf</a>,
-                <a href="https://markibrahim.me/">M Ibrahim</a>
+                J von Kügelgen,
+                L Ericsson,
+                D Bouchacourt,
+                P Vincent,
+                B Sch&ouml;lkopf,
+                M Ibrahim
                 </p>
-          <em class="journal">Preprint 2023</em>
-            <p class="journal">
-              <a href="https://github.com/cianeastwood/ssl_disentangled">Code</a>
-            </p>
+                <p class="journal"><em class="journal">Preprint 2023</em> | <a href="https://github.com/cianeastwood/ssl_disentangled">Code</a></p>
                 <p class="abstract"> We use data augmentations to disentangle rather than discard.</p>
-                <p class="abstract">(Previously @ NeurIPS 2023 workshops on <a href="https://openreview.net/forum?id=KVqyyPvK9H">Self-Supervised Learning</a> 
-                  and <a href="https://openreview.net/forum?id=JoISqbH8vl">Causal Representation Learning</a>)</p>
+                <p class="abstract">(Previously @ NeurIPS 2023 workshops on <a href="https://openreview.net/forum?id=KVqyyPvK9H">SSL</a> 
+                  and <a href="https://openreview.net/forum?id=JoISqbH8vl">CRL</a>)</p>
               </td>
           </tr>
           <tr class="grid-2" onmouseout="dcies_stop()" onmouseover="dcies_start()">
@@ -398,22 +375,19 @@
             </td>
             <td id="dcies_pp" class="grid-r">
               <a href="https://arxiv.org/abs/2210.00364">
-                <papertitle>DCI-ES: An Extended Disentanglement Framework with Connections to Identifiability</papertitle>
+                <papertitle>DCI-ES: An Extended Disentanglement Framework</papertitle>
               </a>
               <p class="names">
               <strong>C Eastwood</strong>*,
-              <a href="https://andreinicolicioiu.github.io/">A Nicolicioiu</a>*,
-              <a href="https://sites.google.com/view/julius-von-kuegelgen/home">J von Kügelgen</a>*,
-              <a href="https://arminkekic.com/">A Kekić</a>,
-              <a href="https://ei.is.mpg.de/person/ftraeuble">F Träuble</a>,
-              <a href="https://addtt.github.io/">A Dittadi</a>,
-              <a href="https://www.is.mpg.de/~bs">B Sch&ouml;lkopf</a>
+              A Nicolicioiu*,
+              J von Kügelgen*,
+              A Kekić,
+              F Träuble,
+              A Dittadi,
+              B Sch&ouml;lkopf
               </p>
-        <em class="journal">ICLR 2023</em>
-              <p class="journal">
-              <a href="https://github.com/andreinicolicioiu/DCI-ES">Code</a>
-              </p>
-              <p class="abstract">We extend the <a href="https://homepages.inf.ed.ac.uk/s1668298/#dci">DCI framework</a> by quantifying the ease-of-use or explicitness of a representation.</p>
+              <p class="journal"><em class="journal">ICLR 2023</em> | <a href="https://github.com/andreinicolicioiu/DCI-ES">Code</a></p>
+              <p class="abstract">We extend the <a href="https://homepages.inf.ed.ac.uk/s1668298/#dci">DCI framework</a> by quantifying representation "explicitness".</p>
               <p class="abstract">(<a href="https://openreview.net/forum?id=KiMUlK8GNG5">Previously</a> @ UAI 2022 <a href="https://crl-uai-2022.github.io/">Causal Repr. Learning Workshop</a>)</p>
             </td>
           </tr>
@@ -446,12 +420,10 @@
               </a>
               <p class="names">
               <strong>C Eastwood</strong>*,
-              <a href="https://www.inf.ed.ac.uk/people/students/Nanbo_Li.html">N Li</a>*,
-              <a href="https://homepages.inf.ed.ac.uk/ckiw/">CKI Williams</a>
+              N Li*,
+              CKI Williams
               </p>
-        <em class="journal">ICLR 2022 Workshop: Objects, Structure and Causality</em>
-              <br>
-              <p></p>
+              <p class="journal"><em class="journal">ICLR 2022 Workshop: Objects, Structure and Causality</em></p>
               <p class="abstract">We propose a framework for explaining object-image differences in terms of the underlying object properties.</p>
               <!--<p>*equal contribution</p>-->
             </td>
@@ -460,10 +432,10 @@
             <td class="grid-l">
               <div class="one">
                 <div class="two" id='unit_1'>
-                  <img id="unit" src='images/uls_new_2.svg' width="220px"> <!-- unit-surprise-2.svg -->
+                  <img id="unit" src='images/uls_new_2.svg' width="170px"> <!-- unit-surprise-2.svg -->
                 </div>
                 <div class="two" id='unit_2'>
-                  <img src='images/uls_new_1.svg' width="220px"> <!-- unit-surprise-1.svg -->
+                  <img src='images/uls_new_1.svg' width="170px"> <!-- unit-surprise-1.svg -->
                 </div>
               </div>
               <script type="text/javascript">
@@ -483,15 +455,10 @@
               <a href="https://openreview.net/forum?id=N5lxfjtUPOS"><papertitle>Unit-Level Surprise in Neural Networks</papertitle></a>
               <p class="names">
               <strong>C Eastwood</strong>*,
-              <a href="https://ianxmason.github.io/">I Mason</a>*,
-              <a href="https://homepages.inf.ed.ac.uk/ckiw/">CKI Williams</a>
+              I Mason*,
+              CKI Williams
               </p>
-        <em class="journal">NeurIPS 2021 Workshop: I Can't Believe it's Not Better </em><b class="journal">(Spotlight &amp; Didactic Award)</b><em class="journal"> and PMLR</em>
-              <p class="journal">
-              <a href="https://github.com/cianeastwood/unit-level-surprise">Code</a>
-              /
-              <a href="https://slideslive.com/38971932/unitlevel-surprise-in-neural-networks?ref=speaker-50036">Video</a>
-              </p>
+              <p class="journal"><em class="journal">NeurIPS 2021 <a href="https://i-cant-believe-its-not-better.github.io/neurips2021/awards/">ICBINB Workshop</a> </em><b class="journal">(Spotlight &amp; Didactic Award)</b> | <a href="https://github.com/cianeastwood/unit-level-surprise">Code</a> | <a href="https://slideslive.com/38971932/unitlevel-surprise-in-neural-networks?ref=speaker-50036">Video</a></p>
               <p class="abstract">We use surprising unit-level activations to determine which parameters 
                 to adapt for a given distribution shift.</p>
               <!--<p>*equal contribution</p>-->
@@ -501,10 +468,10 @@
             <td class="grid-l">
               <div class="one">
                 <div class="two" id='mm_1'>
-                  <img id="mm" src='images/MM2.svg' width="200px">
+                  <img id="mm" src='images/MM2.svg' width="153px">
                 </div>
                 <div class="two" id='mm_2'>
-                  <img src='images/MM1.svg' width="200px">
+                  <img src='images/MM1.svg' width="153px">
                 </div>
               </div>
               <script type="text/javascript">
@@ -525,16 +492,11 @@
                 <papertitle>Learning Object-Centric Representations of Multi-Object Scenes from Multiple Views</papertitle>
               </a>
               <p class="names">
-              <a href="https://www.inf.ed.ac.uk/people/students/Nanbo_Li.html">N Li</a>,
+              N Li,
               <strong>C Eastwood</strong>,
-              <a href="https://homepages.inf.ed.ac.uk/rbf/">B Fisher</a>
+              B Fisher
               </p>
-        <em class="journal">NeurIPS 2020 </em><b class="journal">(Spotlight)</b>
-              <p class="journal">
-              <a href="https://github.com/NanboLi/MulMON">Code</a>
-              /
-              <a href="https://youtu.be/Og2ic2L77Pw">Video</a>
-              </p>
+              <p class="journal"><em class="journal">NeurIPS 2020 </em><b class="journal">(Spotlight)</b> | <a href="https://github.com/NanboLi/MulMON">Code</a> | <a href="https://youtu.be/Og2ic2L77Pw">Video</a></p>
               <p class="abstract">We learn accurate, object-centric representations of 3D scenes by aggregating information from
                 multiple 2D views/observations.</p>
             </td>
@@ -544,7 +506,7 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-            <td style="padding-top:100px;">
+            <td style="padding-top:88px;">
               <p style="text-align:right;font-size:small;">
                 <a href="https://jonbarron.info/">Website source</a>
               </p>
